@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JIITStudySync"
+        tools:targetApi="31">
+        <activity
+            android:name=".ForumPage"
+            android:exported="false" />
+        <activity
+            android:name=".COAnalysisPage"
+            android:exported="false"
+            android:theme="@style/Theme.JIITStudySync" />
+        <activity
+            android:name=".PYQBackPageView"
+            android:exported="false" />
+        <activity
+            android:name=".PYQFrontPageView"
+            android:exported="false" />
+        <activity
+            android:name=".NotesViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubjectNotes"
+            android:exported="false" />
+        <activity
+            android:name=".SubjectsPYQ"
+            android:exported="false" />
+        <activity
+            android:name=".NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PYQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadNotes"
+            android:exported="false" />
+        <activity
+            android:name=".UploadPYQ"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".SignupPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
